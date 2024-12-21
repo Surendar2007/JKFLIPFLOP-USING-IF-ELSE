@@ -1,4 +1,6 @@
 # JKFLIPFLOP-USING-IF-ELSE
+S.D. SURENDAR
+24901073
 
 **AIM:** 
 
@@ -34,15 +36,60 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **Procedure**
 
-/* write all the steps invloved */
+Procedure
 
+/*1.Type the program in Quartus software using Verilog.
+
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+TRUTH TABLE:
+\\
+
+   ![Screenshot 2024-12-21 221801](https://github.com/user-attachments/assets/9cfd68b0-c105-43e0-b3ae-b8741ecd3203)
+
+ 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+module jkflir(j,k,clk,q,qbar);
+
+input j,k,clk;
+
+output reg q,qbar;
+
+initial
+
+3begin
+
+gbl;
+
+end
+
+always @(posedge clk)
+
+3begin
+
+q<=(j&~q)|(~ksq);
+
+qbar<=~q;
+
+end
+
+endmodule
 
 **RTL LOGIC FOR FLIPFLOPS**
+\\
+
+   ![Screenshot 2024-12-21 221812](https://github.com/user-attachments/assets/d16b308b-a2d8-4a65-b966-cc624f8b2d55)
+
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+\\
+
+   ![Screenshot 2024-12-21 221819](https://github.com/user-attachments/assets/b2c99026-93d5-4be8-80b5-a246a0f81f24)
+
 
 **RESULTS**
+Thus, the JK Flip-Flop is designed, and its functionality is validated using the truth table and timing diagrams
